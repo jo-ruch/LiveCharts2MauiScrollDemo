@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:liveCharts="clr-namespace:LiveChartsCore.SkiaSharpView.Maui;assembly=LiveChartsCore.SkiaSharpView.Maui"
+             x:Class="LiveCharts2ScrollDemo.MainPage">
+
+    <StackLayout>
+        <ScrollView HeightRequest="600">
+            <StackLayout>
+                <liveCharts:CartesianChart x:Name="MyChart"
+                                           HeightRequest="400"
+                                           WidthRequest="600"
+                                           ZoomMode="ZoomX"/>
+
+                <BoxView HeightRequest="400"
+                         WidthRequest="600" />
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+
+</ContentPage>
